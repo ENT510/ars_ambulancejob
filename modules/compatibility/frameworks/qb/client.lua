@@ -234,7 +234,7 @@ function Framework.healStatus()
     local playerData = QBCore.Functions.GetPlayerData()
 
     TriggerServerEvent('consumables:server:addHunger', playerData.metadata.hunger + 100000)
-    TriggerServerEvent('consumables:server:addThirst', playerData.metadata.hunger + 100000)
+    TriggerServerEvent('consumables:server:addThirst', playerData.metadata.thirst + 100000)
 end
 
 function Framework.hasItem(item, _quantity)
